@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!--Created by Ukelele version 3.4.0.300 on 2020-01-06 at 10:42 (CET)-->
-<!--Last edited by Ukelele version 3.4.0.300 on 2020-01-08 at 10:13 (CET)-->
+<!--Last edited by Ukelele version 3.4.0.300 on 2020-01-08 at 10:24 (CET)-->
 <keyboard group="126" id="-30724" name="English (intl., with AltGr dead keys)" maxout="2">
     <layouts>
         <layout first="0" last="17" mapSet="ANSI" modifiers="Modifiers"/>
@@ -696,13 +696,13 @@
             <key code="19" output="²"/>
             <key code="20" output="³"/>
             <key code="21" output="¤"/>
-            <key code="22" output=""/>
+            <key code="22" action="Circumflex 1"/>
             <key code="23" output="€"/>
             <key code="24" output="×"/>
             <key code="25" output="‘"/>
-            <key code="26" output=""/>
+            <key code="26" action="Horn 1"/>
             <key code="27" output="¥"/>
-            <key code="28" output=""/>
+            <key code="28" action="Ogonek 2"/>
             <key code="29" output="’"/>
             <key code="30" output="»"/>
             <key code="31" output="Ó"/>
@@ -721,10 +721,10 @@
             <key code="44" output="¿"/>
             <key code="45" output="Ñ"/>
             <key code="46" output="µ"/>
-            <key code="47" output=""/>
+            <key code="47" action="Dot Above 1"/>
             <key code="48" output="&#x0009;"/>
             <key code="49" output=" "/>
-            <key code="50" output=""/>
+            <key code="50" action="Backtick / Grave accent 1"/>
             <key code="51" output="&#x0008;"/>
             <key code="53" output="&#x001B;"/>
             <key code="64" output="&#x0010;"/>
@@ -798,17 +798,17 @@
             <key code="16" output="ü"/>
             <key code="17" output="þ"/>
             <key code="18" output="¡"/>
-            <key code="19" output=""/>
-            <key code="20" output=""/>
+            <key code="19" action="Double Acute 1"/>
+            <key code="20" action="Macron 1"/>
             <key code="21" output="£"/>
             <key code="22" output="¼"/>
-            <key code="23" output=""/>
+            <key code="23" action="Cedilla 1"/>
             <key code="24" output="÷"/>
-            <key code="25" output=""/>
+            <key code="25" action="Breve 1"/>
             <key code="26" output="½"/>
             <key code="27" output=""/>
             <key code="28" output="¾"/>
-            <key code="29" output=""/>
+            <key code="29" action="Ring 1"/>
             <key code="30" output="”"/>
             <key code="31" output="ó"/>
             <key code="32" action="ú 1"/>
@@ -823,13 +823,13 @@
             <key code="41" output="°"/>
             <key code="42" output="¦"/>
             <key code="43" output="ç"/>
-            <key code="44" output=""/>
+            <key code="44" action="Hook Above 1"/>
             <key code="45" output="ñ"/>
             <key code="46" output="µ"/>
-            <key code="47" output=""/>
+            <key code="47" action="Caron 1"/>
             <key code="48" output="&#x0009;"/>
             <key code="49" output=" "/>
-            <key code="50" output=""/>
+            <key code="50" action="Tilde 1"/>
             <key code="51" output="&#x0008;"/>
             <key code="53" output="&#x001B;"/>
             <key code="64" output="&#x0010;"/>
@@ -964,7 +964,13 @@
         <action id="Backtick / Grave accent">
             <when state="none" next="Backtick / Grave accent"/>
         </action>
+        <action id="Backtick / Grave accent 1">
+            <when state="none" next="Backtick / Grave accent"/>
+        </action>
         <action id="Breve">
+            <when state="none" next="Breve"/>
+        </action>
+        <action id="Breve 1">
             <when state="none" next="Breve"/>
         </action>
         <action id="C">
@@ -990,10 +996,19 @@
         <action id="Caron">
             <when state="none" next="Caron"/>
         </action>
+        <action id="Caron 1">
+            <when state="none" next="Caron"/>
+        </action>
         <action id="Cedilla">
             <when state="none" next="Cedilla"/>
         </action>
+        <action id="Cedilla 1">
+            <when state="none" next="Cedilla"/>
+        </action>
         <action id="Circumflex">
+            <when state="none" next="Circumflex"/>
+        </action>
+        <action id="Circumflex 1">
             <when state="none" next="Circumflex"/>
         </action>
         <action id="D">
@@ -1017,7 +1032,13 @@
         <action id="Dot Above">
             <when state="none" next="Dot Above"/>
         </action>
+        <action id="Dot Above 1">
+            <when state="none" next="Dot Above"/>
+        </action>
         <action id="Double Acute">
+            <when state="none" next="Double Acute"/>
+        </action>
+        <action id="Double Acute 1">
             <when state="none" next="Double Acute"/>
         </action>
         <action id="E">
@@ -1099,7 +1120,13 @@
         <action id="Hook Above">
             <when state="none" next="Hook Above"/>
         </action>
+        <action id="Hook Above 1">
+            <when state="none" next="Hook Above"/>
+        </action>
         <action id="Horn">
+            <when state="none" next="Horn"/>
+        </action>
+        <action id="Horn 1">
             <when state="none" next="Horn"/>
         </action>
         <action id="I">
@@ -1207,6 +1234,9 @@
         <action id="Macron">
             <when state="none" next="Macron"/>
         </action>
+        <action id="Macron 1">
+            <when state="none" next="Macron"/>
+        </action>
         <action id="N">
             <when state="none" output="N"/>
             <when state="Backtick / Grave accent" output="Ǹ"/>
@@ -1270,6 +1300,9 @@
         <action id="Ogonek 1">
             <when state="none" next="Ogonek"/>
         </action>
+        <action id="Ogonek 2">
+            <when state="none" next="Ogonek"/>
+        </action>
         <action id="P">
             <when state="none" output="P"/>
             <when state="Breve" output="P̆"/>
@@ -1323,6 +1356,9 @@
         <action id="Ring">
             <when state="none" next="Ring"/>
         </action>
+        <action id="Ring 1">
+            <when state="none" next="Ring"/>
+        </action>
         <action id="S">
             <when state="none" output="S"/>
             <when state="Backtick / Grave accent" output="S̀"/>
@@ -1364,6 +1400,9 @@
             <when state="Macron" output="T̄"/>
         </action>
         <action id="Tilde">
+            <when state="none" next="Tilde"/>
+        </action>
+        <action id="Tilde 1">
             <when state="none" next="Tilde"/>
         </action>
         <action id="U">
